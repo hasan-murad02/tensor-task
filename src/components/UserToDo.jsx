@@ -33,23 +33,17 @@ export default function UserToDo() {
                                         <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-3 grow">
                                             {ToDos.map((todo) => {
                                                 return (
-                                                    <li className="flex items-center">
-                                                        {todo.completed === true ? (
-                                                            <svg
-                                                                className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                                                                viewBox="0 0 12 12"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                            >
-                                                                {/* SVG path elements for completed icon */}
-                                                            </svg>
-                                                        ) : (
-                                                            <svg
-                                                                className="w-3 h-3 fill-rose-500 mr-3 shrink-0"
-                                                                viewBox="0 0 12 12"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                            >
-                                                            </svg>
-                                                        )}
+                                                    <li class="flex items-center">
+                                                        {todo.completed === true ?
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path d="M5 12l5 5l10 -10" />
+                                                            </svg> :
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <path d="M18 6l-12 12" />
+                                                                <path d="M6 6l12 12" />
+                                                            </svg>}
                                                         <span>{todo.title}</span>
                                                     </li>
                                                 )

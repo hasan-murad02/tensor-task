@@ -37,12 +37,12 @@ export default function HomePage() {
 
     }, [])
 
-    const handlePost = (id) => {
-        window.open(`Userposts/${id}`, '_blank');
+    const handlePost = () => {
+        window.open(`Userposts/${Users[0].id}`, '_blank');
     }
 
-    const handleToDo = (id) => {
-        window.open(`Usertodo/${id}`, '_blank');
+    const handleToDo = () => {
+        window.open(`Usertodo/${Users[0].id}`, '_blank');
     }
 
     return (
