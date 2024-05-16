@@ -87,6 +87,7 @@ export default function HomePage() {
                                                 className="bg-red-500 border-b cursor-pointer"
                                                 onClick={() => {
                                                     setUsers(OriginalUsers);
+                                                    setShowOptions(false);
                                                 }}
                                             >
                                                 <td className="text-sm font-medium text-gray-900 px-6 py-4 whitespace-nowrap">
